@@ -1,4 +1,77 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>G2D2</title><description>experience is what you get when you do not get what you want</description><link>http://localhost:2368/</link><generator>Ghost 0.11</generator><lastBuildDate>Thu, 19 Jan 2017 06:51:17 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Welcome to Ghost</title><description>&lt;p&gt;You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at &lt;code&gt;&amp;lt;your blog URL&amp;gt;/ghost/&lt;/code&gt;. When you arrive, you can select this post from a list&lt;/p&gt;</description><link>http://localhost:2368/welcome-to-ghost/</link><guid isPermaLink="false">49f7a74f-e97c-4df9-8851-94397760778f</guid><category>Getting Started</category><dc:creator>geetesh dubey</dc:creator><pubDate>Thu, 19 Jan 2017 05:58:31 GMT</pubDate><content:encoded>&lt;p&gt;You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at &lt;code&gt;&amp;lt;your blog URL&amp;gt;/ghost/&lt;/code&gt;. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>G2D2</title><description>experience is what you get when you do not get what you want</description><link>http://localhost:2368/</link><generator>Ghost 0.11</generator><lastBuildDate>Thu, 19 Jan 2017 06:55:22 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Publishing blogs using GHOST on GitHub</title><description>&lt;p&gt;I published this blog using the instructions provided hereon: &lt;br&gt;
+1. &lt;a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-blog-with-ghost-and-nginx-on-ubuntu-14-04"&gt;Get dependencies for Ubuntu 14.04&lt;/a&gt; &lt;br&gt;
+2. &lt;a href="https://github.com/paladini/ghost-on-github-pages"&gt;Follow this great tutorial&lt;/a&gt; &lt;br&gt;
+:wink:&lt;/p&gt;</description><link>http://localhost:2368/publishing-blogs-using-ghost-on-github/</link><guid isPermaLink="false">cd88a80c-b8d4-4a51-96a9-76c760e8baed</guid><dc:creator>geetesh dubey</dc:creator><pubDate>Thu, 19 Jan 2017 06:27:45 GMT</pubDate><content:encoded>&lt;p&gt;I published this blog using the instructions provided hereon: &lt;br&gt;
+1. &lt;a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-blog-with-ghost-and-nginx-on-ubuntu-14-04"&gt;Get dependencies for Ubuntu 14.04&lt;/a&gt; &lt;br&gt;
+2. &lt;a href="https://github.com/paladini/ghost-on-github-pages"&gt;Follow this great tutorial&lt;/a&gt; &lt;br&gt;
+:wink:&lt;/p&gt;</content:encoded></item><item><title>Install OpenCV 3 with CUDA Support</title><description>&lt;h1 id="installopencv"&gt;Install OpenCV&lt;/h1&gt;
+
+&lt;h2 id="getsomedependencies"&gt;Get some dependencies&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get update
+
+sudo apt-get install libopencv-dev build-essential checkinstall cmake pkg-config yasm libtiff4-dev libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils
+
+sudo add-apt-repository ppa:jon-severinsson/ffmpeg&lt;/code&gt;&lt;/pre&gt;</description><link>http://localhost:2368/install-opencv-3-with-cuda/</link><guid isPermaLink="false">3e3e1fbe-9243-48ad-b32d-8bb46e043011</guid><dc:creator>geetesh dubey</dc:creator><pubDate>Thu, 19 Jan 2017 06:11:01 GMT</pubDate><content:encoded>&lt;h1 id="installopencv"&gt;Install OpenCV&lt;/h1&gt;
+
+&lt;h2 id="getsomedependencies"&gt;Get some dependencies&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get update
+
+sudo apt-get install libopencv-dev build-essential checkinstall cmake pkg-config yasm libtiff4-dev libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils
+
+sudo add-apt-repository ppa:jon-severinsson/ffmpeg  
+sudo apt-get update  
+sudo apt-get install ffmpeg  
+sudo apt-get install frei0r-plugins  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="cloneopencvsrepository"&gt;Clone OpenCV's repository&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir OpenCV  
+cd OpenCV  
+git clone https://github.com/Itseez/opencv.git  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="buildandinstallopencv"&gt;Build and install OpenCV&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;cd opencv  
+mkdir release  
+cd release  
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D ENABLE_FAST_MATH=1 -D CUDA_FAST_MATH=1 -D WITH_CUBLAS=1 ..  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Expected cmake's output to ensure &lt;strong&gt;CUDA&lt;/strong&gt; and &lt;strong&gt;CUBLAS&lt;/strong&gt; compatibility:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;--     Use Cuda:                    YES (ver 6.5)
+--     Use OpenCL:                  YES
+-- 
+--   NVIDIA CUDA
+--     Use CUFFT:                   YES
+--     Use CUBLAS:                  YES
+--     USE NVCUVID:                 NO
+--     NVIDIA GPU arch:             11 12 13 20 21 30 35
+--     NVIDIA PTX archs:            30
+--     Use fast math:               YES
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If everything is correct you can install OpenCV:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;make  
+sudo make install  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Configure library search path  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo '/usr/local/lib' | sudo tee -a /etc/ld.so.conf.d/opencv.conf  
+sudo ldconfig  
+printf '# OpenCV\nPKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig\nexport PKG_CONFIG_PATH\n' &amp;gt;&amp;gt; ~/.bashrc  
+source ~/.bashrc  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;CREDIT:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://blog.aicry.com/ubuntu-14-04-install-opencv-with-cuda/"&gt;This AwesomePost which I blatantly copied from ;p&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>Welcome to Ghost</title><description>&lt;p&gt;You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at &lt;code&gt;&amp;lt;your blog URL&amp;gt;/ghost/&lt;/code&gt;. When you arrive, you can select this post from a list&lt;/p&gt;</description><link>http://localhost:2368/welcome-to-ghost/</link><guid isPermaLink="false">49f7a74f-e97c-4df9-8851-94397760778f</guid><category>Getting Started</category><dc:creator>geetesh dubey</dc:creator><pubDate>Thu, 19 Jan 2017 05:58:31 GMT</pubDate><content:encoded>&lt;p&gt;You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at &lt;code&gt;&amp;lt;your blog URL&amp;gt;/ghost/&lt;/code&gt;. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!&lt;/p&gt;
 
 &lt;h2 id="gettingstarted"&gt;Getting Started&lt;/h2&gt;
 
